@@ -1,9 +1,15 @@
 import React from "react";
+import { AppBar , Toolbar, Typography } from '@material-ui/core';
+import 'typeface-roboto';
 
 export default props => {
   return (
-    <div>
-      <h1>Header</h1>
-    </div>
+    <AppBar position="static">
+    <Toolbar>
+      <Typography variant="h5">
+        Exercise Database
+      </Typography>
+    </Toolbar>
+  </AppBar>
   );
 };
